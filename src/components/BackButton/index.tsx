@@ -9,18 +9,18 @@ import {
 } from './styles'
 
 interface Props extends BorderlessButtonProps{
-  color?: string
+  color?: string;
 }
 
 export function BackButton({color, ...rest}:Props){
-const theme =useTheme()
+const theme = useTheme()
 return(
- <Container {...rest}>
-   <MaterialIcons 
-   name='chevron-left'
-   size = {24}
-   color={color ? color: theme.colors.text}/>
+  <Container {...rest}>
+  <MaterialIcons 
+  name='chevron-left'
+  size = {24}
+  color={color ===undefined? color : theme.colors.text}/>
 
- </Container>
+</Container>
  );
 }
