@@ -23,10 +23,12 @@ import {
  Period,
  Price,
  About,
+ Footer,
 
 
 } from './styles'
 import { Acessory } from '../../components/Acessory';
+import { Button } from '../../components/Button';
 
 
 
@@ -65,7 +67,7 @@ return(
            <Acessory name='Auto' icon={ExchangeSvg}/>
            <Acessory name='2 pessoas' icon={PeopleSvg}/>
          </Acessories>
-         
+
        <About>
        Este é automóvel desportivo. Surgiu do lendário touro de lide indultado na praça Real Maestranza de Sevilla.
         É um belíssimo carro para quem gosta de acelerar.
@@ -73,6 +75,10 @@ return(
        </About>
 
      </Content>
+
+       <Footer>
+         <Button title='Confirmar'/>
+       </Footer>
 
  </Container>
  );
